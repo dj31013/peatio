@@ -1,5 +1,5 @@
-//= require yarn_components/raven-js/dist/raven
-//= require yarn_components/perfect-scrollbar/dist/perfect-scrollbar
+//= require raven.min
+//= require perfect-scrollbar
 //= require ./lib/sentry
 
 //= require jquery3

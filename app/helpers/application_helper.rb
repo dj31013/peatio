@@ -108,10 +108,4 @@ module ApplicationHelper
     end
   end
 
-  # Yaroslav Konoplov: I don't use #image_path & #image_url here
-  # since Gon::Jbuilder attaches ActionView::Helpers which behave differently
-  # compared to what ActionController does.
-  def currency_icon_url(currency)
-    ActionController::Base.helpers.image_url "assets/#{currency.code}.svg"
-  end
 end
