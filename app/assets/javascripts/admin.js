@@ -1,7 +1,4 @@
-//= require raven.min
 //= require perfect-scrollbar
-//= require ./lib/sentry
-
 //= require jquery3
 //= require jquery_ujs
 //= require popper
