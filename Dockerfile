@@ -25,11 +25,9 @@ RUN groupadd -r --gid ${GID} app \
       --gid ${GID} --uid ${UID} app
 
 # Install system dependencies.
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
- && apt-get update \
+RUN apt-get update \
  && apt-get install -y \
-      default-libmysqlclient-dev \
-      nodejs
+      default-libmysqlclient-dev
 
 WORKDIR $APP_HOME
 
